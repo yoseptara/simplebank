@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Fri Aug 12 10:13:24 2022
+# Make data base, printed on Mon Aug 15 09:36:06 2022
 
 # Variables
 
@@ -18,7 +18,6 @@ make: *** No rule to make target `all'.  Stop.
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
- 
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -50,15 +49,18 @@ PATH = /Users/Tara/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/b
 # environment
 GOPATH = /Users/Tara/BackendProjects/goworkspace
 # environment
+ 
+LaunchInstanceID = CBC06EDC-7A5B-4F2D-ADE7-BA4CA9C468B1
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.pKFIwnn78v/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.Gi3SJ9FKTj/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = /private/tmp/com.apple.launchd.CQRyoEreyW/org.xquartz:0
+DISPLAY = /private/tmp/com.apple.launchd.p6zyCUA5Ve/org.xquartz:0
 # environment
 PWD = /Users/Tara/BackendProjects/simplebank
 # environment
@@ -69,6 +71,7 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 MANPATH = /opt/homebrew/share/man::
 # environment
 GOMODCACHE = /Users/Tara/BackendProjects/goworkspace/pkg/mod
+ 
 # environment
 HOME = /Users/Tara
 # default
@@ -90,6 +93,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
+ 
 SHLVL = 1
 # environment
 JAVA_HOME = /Users/Tara/Library/Java/JavaVirtualMachines/azul-11.0.14/Contents/Home
@@ -139,6 +143,8 @@ MAKEFILES :=
 <F = $(notdir $<)
 # environment
 LC_ALL = C
+# environment
+SECURITYSESSIONID = 186a5
 # automatic
 ^F = $(notdir $^)
 # default
@@ -150,9 +156,10 @@ MAKELEVEL := 0
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3901
+VSCODE_PID = 488
 # variable set hash-table stats:
-# Load=68/1024=7%, Rehash=0, Collisions=2/92=2%
+ 
+# Load=70/1024=7%, Rehash=0, Collisions=2/94=2%
 
 # Pattern-specific Variable Values
 
@@ -160,9 +167,9 @@ VSCODE_PID = 3901
 
 # Directories
 
-# . (device 16777234, inode 80100655): 9 files, no impossibilities.
+# . (device 16777234, inode 80100655): 11 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -224,6 +231,7 @@ test:
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 20):
 	go test -v -cover ./...
+ 
 	
 
 createdb:
@@ -263,6 +271,7 @@ migratedown:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
 #  File has not been updated.
 #  commands to execute (from `Makefile', line 14):
 	migrate -path db/migration -database "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable" -verbose down
@@ -281,6 +290,6 @@ migratedown:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Fri Aug 12 10:13:24 2022
+# Finished Make data base on Mon Aug 15 09:36:06 2022
 
  
